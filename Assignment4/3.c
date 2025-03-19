@@ -18,7 +18,7 @@ int main()
         {
             c++;
         }
-        if(c>3)
+        if(c==3)
         break;
     }
     if(c==2)

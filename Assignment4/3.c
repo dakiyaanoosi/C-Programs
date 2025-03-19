@@ -7,7 +7,7 @@ int main()
 
     if(n==1)
     {
-        printf("NEITHER PRIME NO COMPOSITE");
+        printf("NEITHER PRIME NOR COMPOSITE");
         return 0;
     }
 

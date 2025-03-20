@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdatomic.h>
 int main()
 {
     int a,b,c;

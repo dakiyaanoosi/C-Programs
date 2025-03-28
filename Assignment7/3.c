@@ -2,9 +2,9 @@
 #include<string.h>
 int main()
 {
-    char text[256];
+    char text[64];
     printf("Enter a string : ");
-    scanf("%s",text);
+    scanf("%64s",text);
     int l=strlen(text);
     for(int i=0,j=l-1;i<j;i++,j--)
     {

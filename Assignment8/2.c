@@ -19,8 +19,7 @@ int main()
     printf("Enter any character : ");
     scanf("%c",&c);
     
-    printf("toLower : %c\n",c);
-    c=toUpper('c');
-    printf("toUpper : %c",c);
+    printf("toLower : %c\n",toLower(c));
+    printf("toUpper : %c",toUpper(c));
     return 0;
 }

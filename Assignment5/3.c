@@ -9,14 +9,11 @@ int main()
 
     double sum=0,d=1.3;
     int n=2;
-    while(1)
+    for(int i=0;i<t;i++)
     {
-        int temp=sum;
-        sum+=(n/d);
-        break;
-        n+=2;
-        d+=2.2;
-        t--;
+       sum+=(n/d);
+       n+=2;
+       d+=2.2;
     }
     printf("Sum of series : %.*f\n",p,sum);
 

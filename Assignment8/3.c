@@ -2,38 +2,38 @@
 #include<math.h>
 double power(int b,int e)
 {
+    double result=1.0;
     if(b==0)
     {
-        if(e<=0)
-        {
-            printf("Undefined!!\n");
-            return NAN;
-        }
-        return 0.0;
+        if(e==0)
+        return NAN;
+        return 0;
     }
-    
-    if(b==1 || e==0) return 1.0;
-
-    if(e<0) return 1.0/power(b,-e);
-
-    double halfpower=power(b,e/2);
-
-    if(e%2==0) return halfpower*halfpower;
-    else return b*halfpower*halfpower;
+    if(e==0)
+    return 1;
+    for(int i=0;i<e;i++)
+    result*=b;
+    return result;
 }
-
 int main()
 {
     int b,e;
+    double result;
     printf("Base : ");
     scanf("%d",&b);
     printf("Exponent : ");
     scanf("%d",&e);
 
-    double result=power(b,e);
+    if(b==0 && e<0)
+    {
+        printf("Not Defined!!\n");
+        return 0;
+    }
+    else if(e<0)
+    result=1.0/power(b,-e);
+    else
+    result=power(b,e);
 
-    if(!isnan(result))
-    printf("%.2f\n",result);
-    
+    printf("%.3f\n",result);    
     return 0;
 }

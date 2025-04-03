@@ -6,11 +6,11 @@ long long int factorial(int n)
     fact*=i;
     return fact;
 }
-long double combination(long n,long r)
+long double combination(int n,int r)
 {
     return (long double)factorial(n)/(factorial(n-r)*factorial(r));   
 }
-long double permutation(long n,long r)
+long double permutation(int n,int r)
 {
     return (long double)factorial(n)/factorial(n-r);
 }

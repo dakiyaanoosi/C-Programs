@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<ctype.h>
 int main()
 {
     int i,j,index=-1;
@@ -16,7 +17,7 @@ int main()
     {
         for(j=0;j<pl;j++)
         {
-            if(string[i+j]!=pattern[j])
+            if(tolower(string[i+j])!=tolower(pattern[j]))
             break;
         }
         if(j==pl)

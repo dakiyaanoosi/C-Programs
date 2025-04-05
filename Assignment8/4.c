@@ -1,7 +1,7 @@
 #include<stdio.h>
-long long int factorial(int n)
+unsigned long long int factorial(int n)
 {
-    long long int fact=1;
+    unsigned long long int fact=1;
     for(int i=n;i>=2;i--)
     fact*=i;
     return fact;
@@ -31,15 +31,15 @@ int main()
 		 scanf("%d",&n);
 		 printf("Enter 'r' : ");
 		 scanf("%d",&r);
-		 printf("%dC%d : %Lf\n",n,r,combination(n,r));
+		 printf("%dC%d : %.0Lf\n",n,r,combination(n,r));
 		 break;
         case 3 : printf("Enter 'n' : ");
 		 scanf("%d",&n);
 		 printf("Enter 'r' : ");
 		 scanf("%d",&r);
-		 printf("%dP%d : %Lf\n",n,r,permutation(n,r));
+		 printf("%dP%d : %.0Lf\n",n,r,permutation(n,r));
 		 break;
-	default : printf("Invalid Input !!");
+	default : printf("Invalid choice !!");
     }
 }
     

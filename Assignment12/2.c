@@ -15,7 +15,7 @@ int main()
     struct Data cal;
     union Number n;
     printf("x : "); scanf("%f",&cal.x);
-    printf("Is 'n' a folating point number ? [0/1] : "); 
+    printf("Is 'n' a floating point number ? [0/1] : "); 
     scanf("%d", &cal.isFloat);
 
     if (cal.isFloat)

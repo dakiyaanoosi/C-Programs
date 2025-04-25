@@ -15,4 +15,5 @@ int main()
     printf("Enter a text : "); scanf(" %[^\n]",text);
     int l=strlen(text);
     print(text,l-1);
+    return 0;
 }

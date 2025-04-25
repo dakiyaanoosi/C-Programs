@@ -12,7 +12,7 @@ void print(char text[100], int l)
 int main()
 {
     char text[100];
-    printf("Enter a text : "); scanf("%99[^\n]s",&text);
+    printf("Enter a text : "); scanf(" %[^\n]",text);
     int l=strlen(text);
     print(text,l-1);
 }

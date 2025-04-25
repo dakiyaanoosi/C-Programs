@@ -45,4 +45,5 @@ int main()
         printf("Roll no. : %d\n",s[i].roll);
         printf("Address : %s\n\n",s[i].address);
     }
+    return 0;
 }

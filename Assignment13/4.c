@@ -7,8 +7,10 @@ struct Student
 
 void input(struct Student *s)
 {
-    printf("Roll no. : "); scanf("%d", &s.roll);
-    printf("Name: "); scanf(" %[^\n]",s.name);
+    printf("Roll no. : ");
+    scanf("%d", &s->roll);
+    printf("Name: ");
+    scanf(" %[^\n]", s->name);
 }
 
 void display(struct Student s)
